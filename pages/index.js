@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Name my color with AI</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
