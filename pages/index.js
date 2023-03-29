@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 export default function Home() {
   const [colorInput, setcolorInput] = useState("");
@@ -36,6 +36,9 @@ export default function Home() {
       <Head>
         <title>Name my color with AI</title>
         <link rel="icon" href="/dog.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
 
       <main className={styles.main}>
@@ -49,7 +52,7 @@ export default function Home() {
             value={colorInput}
             onChange={(e) => setcolorInput(e.target.value)}
           />
-          <input type="submit" value="Generate CSS variable names" />
+          <input type="submit" value="Generate SCSS variable names" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>

@@ -49,14 +49,13 @@ export default async function (req, res) {
 }
 
 function generatePrompt(color) {
-  const capitalizedColor =
-    color[0].toUpperCase() + color.slice(1).toLowerCase();
-  return `Suggest a SCSS variable for this color. It has to be an utility class name
+  return `Suggest three SCSS variable names for this color.
 
 Color: #2ecc71
-Names: $success-color, $submited-color
+Names: $forest-green, $emerald-green, $grass-green
 Color: #e74c3c
-Names: $error-color, $catch-color
-Color: ${capitalizedColor}
+Names: $red-orange, $fire-engine-red, $coral-red
+Color: ${color}
 Names:`;
 }
+ 
