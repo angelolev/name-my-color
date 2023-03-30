@@ -49,12 +49,12 @@ export default async function (req, res) {
 }
 
 function generatePrompt(color) {
-  return `Suggest three SCSS variable names for this color.
+  return `Suggest two SCSS variable names for this color
 
 Color: #2ecc71
-Names: $forest-green, $emerald-green, $grass-green
+Names: $forest-green, $emerald-green
 Color: #e74c3c
-Names: $red-orange, $fire-engine-red, $coral-red
+Names: $red-orange, $fire-engine-red
 Color: ${color}
 Names:`;
 }
